@@ -1,0 +1,8 @@
+.offers {
+  background: rgb(113, 167, 243);
+  background: radial-gradient(
+    circle,
+    rgba(113, 167, 243, 1) 0%,
+    rgba(58, 127, 255, 1) 79%
+  );
+}
