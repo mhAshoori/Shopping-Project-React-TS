@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { RouteComponentProps, useHistory } from "react-router-dom";
-
+ import { toast } from "react-toastify";
 const PostProcess = (props: RouteComponentProps) => {
   const [input, setInput] = React.useState({
     province: "",
@@ -19,6 +19,7 @@ const PostProcess = (props: RouteComponentProps) => {
   const handleClick = (e) => {
     e.preventDefault();
     dispatch({ type: "addressinfo", payload: input });
+    toast.info('خرید شما با موفقیت ثبت شد')
     history.push(`finalstep`);
   };
 
