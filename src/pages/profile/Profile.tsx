@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RouteComponentProps } from "react-router-dom";
+import {toast} from 'react-toastify'
 
 const Profile = (props: RouteComponentProps) => {
   const dispatch = useDispatch();
@@ -8,6 +9,7 @@ const Profile = (props: RouteComponentProps) => {
   const handleClick = (e) => {
     e.preventDefault();
     dispatch({ type: "logout", payload: userEmail });
+    toast.warn('از حساب خود خارج شدید')
     props.history.push("/");
   };
   return (

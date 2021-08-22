@@ -4,13 +4,14 @@ import ThumbGallery from "../../components/swipers/gallery/ThumbGallery";
 import { RouteComponentProps} from "react-router";
 import { useParams,useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
-
+import { toast } from "react-toastify";
 const Product = (props: RouteComponentProps) => {
   //Redux Elements
   const dispatch = useDispatch();
   //const cart = useSelector<any, any>((state) => state.cart);
   const handleClick = (item,actionType) => {
     console.log("Clicked");
+    toast.info('محصول مورد نظر به سبد خرید اضافه شد')
     dispatch({ type: actionType, payload: item });
   };
   

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { RouteComponentProps } from "react-router-dom";
-
+import {toast} from 'react-toastify'
 const Login = (props: RouteComponentProps) => {
   const [input, setInput] = React.useState({ email: "", password: "" });
   const handleInput = (e: React.ChangeEvent) => {
@@ -14,7 +14,9 @@ const Login = (props: RouteComponentProps) => {
   const handleClick = (e) => {
     e.preventDefault();
     dispatch({ type: "login", payload: input });
-    props.history.push("/profile");
+    toast.success('با موفقیت وارد شدید')
+    setTimeout(() => { props.history.push("/profile"); }, 2000);
+    
   };
   return (
     <div className="h-5/6">
