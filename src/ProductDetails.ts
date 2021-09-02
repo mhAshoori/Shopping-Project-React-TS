@@ -24,6 +24,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 4750000,
+      discount: [true, 15],
     },
     {
       id: 2,
@@ -46,6 +47,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 6450000,
+      discount: [true, 10],
     },
     {
       id: 3,
@@ -68,6 +70,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 7050000,
+      discount: [false, 0],
     },
     {
       id: 4,
@@ -92,6 +95,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 3250000,
+      discount: [true, 25],
     },
   ],
   tablets: [
@@ -115,6 +119,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 5790000,
+      discount: [true, 20],
     },
     {
       id: 2,
@@ -136,6 +141,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 3100000,
+      discount: [false, 0],
     },
     {
       id: 3,
@@ -144,7 +150,7 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/tablet-3-img-2.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/tablet-3-img-3.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/tablet-3-img-4.jpg",
-        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/tablet-3-img-5.jpg"
+        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/tablet-3-img-5.jpg",
       ],
       title: "تبلت هوآوی مدل Huawei MatePad T10 LTE",
       engName: "LG MatePad T10 LTE 16GB Tablet",
@@ -158,6 +164,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 3100000,
+      discount: [false, 0],
     },
     {
       id: 4,
@@ -178,9 +185,10 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 3100000,
+      discount: [true, 25],
     },
   ],
-  laptops:[
+  laptops: [
     {
       id: 1,
       imgs: [
@@ -188,7 +196,7 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-1-img-2.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-1-img-3.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-1-img-4.jpg",
-        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-1-img-5.jpg"
+        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-1-img-5.jpg",
       ],
       title: "لپتاپ هوآوی مدل MediaPad M5 Lite 8",
       engName: "Huawei Laptop M5 Lite 8 32/3GB RAM",
@@ -202,6 +210,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 11790000,
+      discount: [true, 35],
     },
     {
       id: 2,
@@ -223,6 +232,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 13790000,
+      discount: [true, 25],
     },
     {
       id: 3,
@@ -230,7 +240,6 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-3-img-1.png",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-3-img-2.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-3-img-3.jpg",
-        
       ],
       title: "لپتاپ ال جی مدل MediaPad M5 Lite 8",
       engName: "LG Laptop M5 Lite 8 32/3GB RAM",
@@ -244,6 +253,7 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 15790000,
+      discount: [false, 0],
     },
     {
       id: 4,
@@ -251,7 +261,6 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-4-img-1.png",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-4-img-2.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/laptop-4-img-3.jpg",
-        
       ],
       title: "لپتاپ اپل مدل MediaPad M5 Lite 8",
       engName: "Apple Laptop M5 Lite 8 32/3GB RAM",
@@ -265,9 +274,10 @@ const ProductDetails = {
       },
       warranty: "18",
       price: 15790000,
+      discount: [false, 0],
     },
   ],
-  watches:[
+  watches: [
     {
       id: 1,
       imgs: [
@@ -278,7 +288,7 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-1-img-5.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-1-img-6.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-1-img-7.png",
-        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-1-img-8.jpg"
+        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-1-img-8.jpg",
       ],
       title: "ساعت سامسونگ مدل MediaPad M5 Lite 8",
       engName: "SamSung Smart Watch M5 Lite 8 32/3GB RAM",
@@ -291,7 +301,8 @@ const ProductDetails = {
         storage: "32 گیابایت",
       },
       warranty: "18",
-      price: 15790000,
+      price: 1579000,
+      discount: [true, 12],
     },
     {
       id: 2,
@@ -303,7 +314,7 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-2-img-5.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-2-img-6.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-2-img-7.png",
-        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-2-img-8.jpg"
+        "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-2-img-8.jpg",
       ],
       title: "ساعت هوآوی مدل MediaPad M5 Lite 8",
       engName: "Huawei Smart Watch M5 Lite 8 32/3GB RAM",
@@ -316,10 +327,11 @@ const ProductDetails = {
         storage: "32 گیابایت",
       },
       warranty: "18",
-      price: 15790000,
+      price: 1379000,
+      discount: [true, 16],
     },
     {
-      id:3,
+      id: 3,
       imgs: [
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-3-img-1.png",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-3-img-2.jpg",
@@ -336,7 +348,8 @@ const ProductDetails = {
         storage: "32 گیابایت",
       },
       warranty: "18",
-      price: 15790000,
+      price: 1479000,
+      discount: [false, 0],
     },
     {
       id: 4,
@@ -346,7 +359,6 @@ const ProductDetails = {
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-4-img-3.jpg",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-4-img-4.png",
         "https://shop-api.s3.ir-thr-at1.arvanstorage.com/watch-4-img-5.jpg",
-
       ],
       title: "ساعت شیائومی مدل MediaPad M5 Lite 8",
       engName: "Xiaomi Smart Watch M5 Lite 8 32/3GB RAM",
@@ -359,9 +371,10 @@ const ProductDetails = {
         storage: "32 گیابایت",
       },
       warranty: "18",
-      price: 15790000,
+      price: 1679000,
+      discount: [false, 0],
     },
-  ]
+  ],
 };
 
 export default ProductDetails;
