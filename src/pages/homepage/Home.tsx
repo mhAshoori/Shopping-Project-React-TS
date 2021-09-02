@@ -2,30 +2,22 @@
 import React from "react";
 import SwiperIL from "../../components/swipers/SwiperIL/SwpierIL";
 //import ProductCard from "../../components/product-card/ProductCard";
-import "./Home.css"
+import "./Home.css";
 // assets
 import RightSideImg from "../../assets/imgs/side-slides/gaming-stuff.jpg";
 import LeftSideImg from "../../assets/imgs/side-slides/acccessories.jpg";
-import xiaomiImg from '../../assets/imgs/home-slides/xiaomi.jpg'
-import {RouteComponentProps} from 'react-router'
+import xiaomiImg from "../../assets/imgs/home-slides/xiaomi.jpg";
+
+import { RouteComponentProps } from "react-router";
+import SwiperResponsive from "../../components/swipers/responsive/SwiperResponsive";
 
 // interfaces
 
+const Home = (props: RouteComponentProps) => {
+  // Extracting discounted products
 
-const Home = (props:RouteComponentProps) => {
-  // const handleClick =()=>{
-  //   props.history.push("/swiper")
-  // }
-  // const history=useHistory()
-  // const handleClick2 =()=>{
-  //   history.push("/swiper")
-  // }
-   
   return (
-    <>
-    {/* <div onClick={handleClick}>Hello World!</div>
-    <div onClick={handleClick2}>Hello World 2!</div>
-     */}
+    <div className="flex flex-col gap-5 justify-center">
       {/* Swiper & Sides */}
       <div className=" flex flex-row justify-center items-center ">
         <div className=" w-11/12 flex flex-row items-center justify-center">
@@ -41,14 +33,21 @@ const Home = (props:RouteComponentProps) => {
         </div>
       </div>
       {/* Special Offer */}
-      <div className="offers w-full h-auto my-2 cursor-pointer" onClick={()=>props.history.push(`product/${'3'}?category=${'laptop'}s`)} >
-        {/* <ProductCard {...props} /> */}
-        
+      <div
+        className="flex flex-col items-center justify-center gap-y-3 w-11/12 self-center h-auto my-2 
+            border border-solid border-gray-300 rounded-lg"
+      >
+        <p className="mt-7 text-4xl">تخفیف های باور نکردنی</p>
+        {/* Cards Container  */}
+        <div className=" w-11/12 h-auto p-3">
+          <SwiperResponsive />
+        </div>
       </div>
+      {/* Xiaomi wide image  */}
       <div className="w-full py-3 overflow-hidden flex items-center justify-center">
         <img className="w-11/12 rounded-xl" src={xiaomiImg} alt="#" />
       </div>
-    </>
+    </div>
   );
 };
 
