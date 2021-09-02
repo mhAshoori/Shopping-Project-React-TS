@@ -10,7 +10,9 @@ const Profile = (props: RouteComponentProps) => {
     e.preventDefault();
     dispatch({ type: "logout", payload: userEmail });
     toast.warn('از حساب خود خارج شدید')
-    props.history.push("/");
+    setTimeout(() => { props.history.push("/");
+    window.location.reload();
+  }, 2000);
   };
   return (
     <div className="w-full h-96 flex flex-row items-center justify-center ">

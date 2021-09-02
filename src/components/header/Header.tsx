@@ -31,7 +31,7 @@ function Header() {
         {/* Right Side */}
         <div className=" md:w-10/12 h-full flex justify-center items-center">
           {/* Logo */}
-          <div className="cursor-pointer" onClick={() => history.push("/")}>
+          <div className="cursor-pointer" onClick={() => {history.push("/");window.location.reload();} }>
             <img src={Logo} alt="" className=" px-3" />
           </div>
           {/* Search-Bar */}

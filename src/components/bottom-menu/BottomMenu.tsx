@@ -17,12 +17,15 @@ const BottomMenu = () => {
   return (
     <div className="">
       <div
-        className="flex  md:hidden fixed bottom-0 w-full h-16 bg-gray-200 
+        className="flex z-50 md:hidden fixed bottom-0 w-full h-16 bg-gray-200 
         justify-around items-center text-gray-700 "
       >
         <div
           className="flex flex-col justify-center items-center cursor-pointer"
-          onClick={() => handleClick("/")}
+          onClick={() => {
+            history.push("/");
+            window.location.reload();
+          }}
         >
           <AiFillHome />
           <p>صفحه اصلی</p>
