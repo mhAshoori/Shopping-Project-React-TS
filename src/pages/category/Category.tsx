@@ -1,26 +1,15 @@
 import React from "react";
 import { RouteComponentProps, useLocation } from "react-router-dom";
-//import { BsList } from "react-icons/bs";
-//import { useDispatch } from "react-redux";
+
 import ProductDetails from "../../ProductDetails";
 import ProductCard from "../../components/product-card/ProductCard";
-import { useHistory } from "react-router";
-const Category = (props: RouteComponentProps) => {
-  // Redux Elements
-  // const dispatch = useDispatch();
-  //   const handleClick = (item, actionType) => {
-  //     console.log("Clicked");
-  //     dispatch({ type: actionType, payload: item });
-  //   };
 
-  //RouterDOM Elements
-  //const { id } = useParams<{ id: string }>();
-  const history = useHistory();
+const Category = (props: RouteComponentProps) => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-  //let category='phones'
+
   const type = searchParams.get("type");
-  //const items = type && ProductDetails[type];
+
   const items = type && ProductDetails[type];
   console.log("items: ", type);
   React.useEffect(() => {
@@ -67,12 +56,7 @@ const Category = (props: RouteComponentProps) => {
         <div className=" flex flex-wrap justify-center md:w-auto md:border-2 md:rounded-lg m-2">
           {modifiedItems.map((item, index) => {
             return (
-              <div
-                key={index}
-                onClick={() =>
-                  history.push(`/product/${item.id}?category=${item.category}s`)
-                }
-              >
+              <div key={index}>
                 <ProductCard cardInputs={item} />
               </div>
             );
