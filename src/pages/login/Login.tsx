@@ -6,7 +6,7 @@ const Login = (props: RouteComponentProps) => {
   const [input, setInput] = React.useState({ email: "", password: "" });
   const handleInput = (e: React.ChangeEvent) => {
     const data = e.target as HTMLInputElement;
-    console.log(input);
+   // console.log(input);
     setInput({ ...input, [data.name]: data.value });
   };
   const dispatch = useDispatch();
